@@ -1,0 +1,7 @@
+# onlineBookWormsCP11.1
+
+This was a great project to expand my javaschript knowledge.  This page is for a ficticious group called online book worms that specialize in book reviews.  The project called for the addition of functionality to their review input system where a user will be able to select how many stars they would like to give as a rating to the book in question and gives a word count to the reiview being written in the text box so, they don't go over the 1000 word limit.
+
+There were a lot of details that went into the star system in javascript.  The script had to be set to listen for a mouseover event and then instructions had to be run to keep the current star lit and all of the stars to the left.  Then, the system was programmed to listen for a click on a star to hold the star rating system in place otherwise, once the mouse left a star, they would all become unlit.  Then, after the click, and once the mouse left presented a special circumstance where one of the initial mouseleave listeners had to be removed to keep the rating system working as inteneded.
+
+This page is able to detect the number of characters written in the review box and formats the text in the box with a red background if the character count goes over 1000.  This is acheived by listening for the key up event.  Once the keyboard key is released, the character count is increased by one.  The character count is sent to a pre-written function that parses the text with regex and returns a count to the value of the character count input.
